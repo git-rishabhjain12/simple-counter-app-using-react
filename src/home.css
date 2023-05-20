@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    background-color: #FF91A4;
+    height: 100vh;
+    position: relative;
+}
+
+.sections {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.heading {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #58252d;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.para {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.buttons {
+    padding-top: 2rem;
+}
+
+.btn {
+    margin: 0 1rem;
+}
+
+.increment,
+.decrement,
+.reset {
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+}
+
+.increment {
+    background-color: rgb(70, 182, 70);
+    border-radius: 30px;
+    border: none;
+    box-shadow: 1px 1px 5px #000;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s linear;
+}
+
+
+.decrement {
+    background-color: rgb(219, 33, 33);
+    border-radius: 30px;
+    border: none;
+    box-shadow: 1px 1px 5px #000;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s linear;
+}
+
+.reset {
+    background-color: rgb(52, 38, 38);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 5px #000;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s linear;
+}
+
+.increment:hover,
+.decrement:hover,
+.reset:hover {
+    transform: scale(1.2);
+}
+
+@media all and (max-width:900px) {
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .para {
+        font-size: 3rem;
+    }
+
+    .buttons {
+        padding-top: 1rem;
+    }
+
+    .btn {
+        margin: 0 0.5rem;
+    }
+
+    .increment,
+    .decrement,
+    .reset {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media all and (max-width:700px) {
+    .sections {
+        top: 0%;
+    }
+
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        margin: 0.5rem 0;
+    }
+}
